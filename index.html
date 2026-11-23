@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mr. Cat Bob - Livros para Colorir</title>
+  <!-- Fontes arredondadas estilo cartoon -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header-marca">
+    <!-- Camada de nuvens animadas ao fundo -->
+    <div class="ceu-nuvens" aria-hidden="true">
+      <img src="./imgs/Cat_Figure.png" alt="" class="nuvem nuvem-1">
+      <img src="./imgs/Cat_Figure.png" alt="" class="nuvem nuvem-2">
+      <img src="./imgs/Cat_Figure.png" alt="" class="nuvem nuvem-3">
+      <img src="./imgs/Cat_Figure.png" alt="" class="nuvem nuvem-1">
+      <img src="./imgs/Cat_Figure.png" alt="" class="nuvem nuvem-2">
+      <img src="./imgs/Cat_Figure.png" alt="" class="nuvem nuvem-3">
+    </div>
+    <div class="header-conteudo">
+      <img src="./imgs/banner_loja3.png" alt="Logo Mr. Cat Bob" class="banner-logo">
+      <p class="subtitulo">Escolha seu livro digital, imprima e relaxe colorindo!</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- Faixa de boas-vindas com o Mascote -->
+    <section class="boas-vindas">
+      <img src="./imgs/MrCatBob4.png" alt="Mascote Mr. Cat Bob" class="mascote-avatar">
+      <div class="balao-fala">
+        <strong>Olá! Eu sou o Mr. Cat Bob! E seja bem-vindo(a) a minha loja oficial!</strong>
+        <span>Fique a vontade para encontrar os desenhos para colorir e garanta já o seu desenho!</span>
+      </div>
+    </section>
+
+    <!-- NOVA BARRA DE PESQUISA -->
+    <section class="busca-container">
+      <div class="busca-box">
+        <span class="busca-icone">🔍</span>
+        <input 
+          type="text" 
+          id="campo-busca" 
+          placeholder="Buscar livro por tema (ex: gatinhos, natureza, fofo)..." 
+          autocomplete="off"
+        >
+        <button id="btn-limpar-busca" class="btn-limpar" title="Limpar busca">✕</button>
+      </div>
+      <p id="contador-resultados" class="contador-resultados"></p>
+    </section>
+
+    <!-- Os cards dos ebooks aparecem aqui -->
+    <div id="vitrine-produtos" class="grid-produtos"></div>
+  </main>
+
+  <footer>
+    <p>© 2026 Mr. Cat Bob • Todos os direitos reservados</p>
+  </footer>
+
+  <script src="dados.js?v=1"></script>
+  <script src="script.js?v=1"></script>
+</body>
+</html>
